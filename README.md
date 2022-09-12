@@ -1,2 +1,2 @@
-# Barra-Progresso
- Barra de progresso
+# Barra de Progresso
+ Barra de progresso para sites em geral
