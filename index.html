@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Barra de progresso</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class="barra">
+		<div></div>
+	</div>
+	<input type="number" onkeyup="alterarProgresso()" min="0" max="100">
+
+<script>
+
+	const progresso = document.querySelector('.barra div');
+	const inputNumero = document.querySelector('input');
+
+	const alterarProgresso = () =>{
+		progresso.setAttribute("style", "width: " + inputNumero.value + "%");
+	}
+
+</script>
+</body>
+</html>
